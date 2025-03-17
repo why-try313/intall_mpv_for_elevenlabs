@@ -1,8 +1,11 @@
 ### Installation process
 1. as shown in the official https://mpv.io/installation/ website, head to the first repository https://github.com/shinchiro/mpv-winbuild-cmake/releases
-2. Click to expand the "See all 16 assets" and grab "mpv-x86_64-2025**.7z" and "mpv-dev-x86_64-2025***.7z" zip files, the first one contains the program, the second the DLL libraries
-3. In you project root folder, create an mpv folder, and dump both the program and the DLL files
-5. Set your python script to look for the DLLs in you newly created "mpv" folder"
+<br><hr><br>
+2. Click to expand the "See all 16 assets" and grab "mpv-x86_64-2025**.7z" and "mpv-dev-x86_64-2025***.7z" zip files, the first one contains the program, the second the DLL libraries<br><img src="mpv_programjpg.jpg"><br><img src="mpv_dev.jpg">
+<br><hr><br>
+3. In you project root folder, create an mpv folder, and dump both the program and the DLL files<br><img src="save_mpv.jpg"/>
+<br><hr><br>
+4. Set your python script to look for the DLLs in you newly created "mpv" folder"
 ```python
 import os
 ## Set mpv folder as location for libraries
@@ -28,3 +31,5 @@ for chunk in audio_stream:
     if isinstance(chunk, bytes):
         print(chunk)
 ```
+<br><hr><br>
+Your project should look like this: <img src="vscode.jpg"/>
